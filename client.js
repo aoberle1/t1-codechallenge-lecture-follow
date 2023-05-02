@@ -66,9 +66,10 @@ function sumTiles(anArray) {
     sum = sum + anArray[i].score;
   }
   console.log( 'sum is:', sum );
+  return sum
 }
 
-sumTiles( myScrabbleTiles );
+console.log( 'sumTiles returns:', sumTiles( myScrabbleTiles ));
 
 // for (let anItem of anArray){
 // anItem rather than anArray[i]
