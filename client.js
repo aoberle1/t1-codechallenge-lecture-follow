@@ -77,10 +77,19 @@ console.log( 'sumTiles returns:', sumTiles( myScrabbleTiles ));
 
 
 // 7. Use the function above to get the total score for myScrabbleTiles and assign the value to a variable called "myScore".
-
+// calling function and setting it equal to the new variable myScore
+let myScore = sumTiles(myScrabbleTiles)
 
 // 8. Check whether or not your score is higher than the highScore.
 // 8-1 If your score is higher, change highScore to the new high score.
+// if conditional - doesn't have to be nested inside functions or loops
+if ( myScore > highScore ){
+  highScore = myScore
+  console.log( 'We have a new high score!')
+}
 
+// if statement with ternary operator
+// myScore > highScore ? highScore = myScore :
 
+console.log( 'The high score is now:', highScore );
 // DONE!
